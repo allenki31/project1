@@ -1,0 +1,60 @@
+package legato.com.first;
+
+import java.util.Scanner;
+
+class Employee{
+	private int empNo;
+	private String empName;
+	private int empSal;
+	Employee(int empNo,String empName,int empSal){
+		this.empNo=empNo;
+		this.empName=empName;
+		this.empSal=empSal;
+		System.out.println("empNo "+empNo+"empName "+empName+"empSal "+empSal);
+	}
+	public int getEmpNo() {
+		return empNo;
+	}
+	public void setEmpNo(int empNo) {
+		this.empNo = empNo;
+	}
+	public String getEmpName() {
+		return empName;
+	}
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+	public int getEmpSal() {
+		return empSal;
+	}
+	public void setEmpSal(int empSal) {
+		this.empSal = empSal;
+	}
+	
+
+
+}
+public class EmployeeData {
+	public static void main(String[] args) {
+		
+	
+Employee e = new Employee(123,"manjiri",25000);
+Scanner s =new Scanner(System.in);
+System.out.println("employee no , name sal");
+int empNo=s.nextInt();
+ String empName=s.next();
+ int empSal=s.nextInt();
+ Employee e1 = new Employee(empNo,empName,empSal);
+
+e.setEmpNo(101);
+e.setEmpName("manjiri");
+e.setEmpSal(25000);
+System.out.println("employee no :"+e.getEmpNo());
+System.out.println(e.getEmpName());
+System.out.println(e.getEmpSal());
+
+
+
+
+}
+}

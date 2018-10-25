@@ -1,0 +1,32 @@
+package legato.com.first;
+
+import java.util.Scanner;
+
+public class TestAccount {
+	public static void main(String[] args) {
+		Saving s = new Saving(12345,"vinay","65000",5.00);
+		Scanner ss = new Scanner(System.in);
+		System.out.println("Enter Account details AccNo,Accname,Accbalance,Rate of interest ");
+		s.setAccNo(ss.nextInt());
+		s.setAccName(ss.next());
+		s.setAccBal(ss.next());
+		s.setRateOfInt(ss.nextDouble());
+		System.out.println("Account number : "+s.getAccNo());
+		System.out.println("Account name   : "+s.getAccName());
+		System.out.println("Account Balance : "+s.getAccBal());
+		System.out.println("Rate of Interest :"+s.getRateOfInt());
+		Current c=new Current(12345,"vinay","65000",3.00);
+		Scanner ss1 = new Scanner(System.in);
+		System.out.println("Enter Account details AccNo,Accname,Accbalance,Rate of interest ");
+		c.setAccNo(ss1.nextInt());
+		c.setAccName(ss1.next());
+		c.setAccBal(ss1.next());
+		c.setRateOfInt(ss1.nextDouble());
+		System.out.println("Account number : "+c.getAccNo());
+		System.out.println("Account name   : "+c.getAccName());
+		System.out.println("Account Balance : "+c.getAccBal());
+		System.out.println("Rate of Interest :"+c.getRateOfInt());
+	
+	}
+
+}
